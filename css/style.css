@@ -1,0 +1,71 @@
+body{
+    background-color: #706fd3;
+    width: auto;
+    height: auto;
+}
+.container{
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    grid-row-gap: 20px;
+    
+}
+.jumbotron{
+    display: flex;
+    background-size: 1000px 300px;
+    width: 1000px;
+    height: 300px;
+    padding: auto;
+    border: auto;
+    margin: auto;
+
+}
+.blog{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-size: 1000px 300px;
+    width: 1000px;
+    height: 300px;
+    padding: auto;
+    border: auto;
+    margin: auto;
+}
+
+#icon{
+    float: left;
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+}
+.texto{
+    float: right;   
+}
+.vid{
+    width: 200px;
+    height: 200px;
+   border-color: aliceblue;
+   border-spacing: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+    align-items: center;
+}
+.adicionales{
+    padding: auto;
+    border: auto;
+    margin: auto;
+    background-size: 1000px 300px;
+    width: 1000px;
+    height: 300px;
+}
+.footer{
+    padding: auto;
+    border: auto;
+    margin: auto;
+    background-size: 1000px 300px;
+    width: 1000px;
+    height: 300px;
+}
