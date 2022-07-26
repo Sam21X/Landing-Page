@@ -1,71 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
 body{
-    background-color: #706fd3;
-    width: auto;
-    height: auto;
+    background-color: #2421e9a2;
+
 }
-.container{
-    display: grid;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    grid-row-gap: 20px;
-    
-}
-.jumbotron{
+
+.container-flex{
     display: flex;
-    background-size: 1000px 300px;
-    width: 1000px;
-    height: 300px;
-    padding: auto;
-    border: auto;
-    margin: auto;
-
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
-.blog{
-    display:flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    background-size: 1000px 300px;
-    width: 1000px;
-    height: 300px;
-    padding: auto;
-    border: auto;
-    margin: auto;
+.navigation-bar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-style: groove;
+    border-radius: 20px;
+    margin: -5px -5px -5px -5px;
+    padding: 5px;
 }
 
-#icon{
-    float: left;
-    border-radius: 30px;
-    width: 150px;
-    height: 150px;
+
+.imagen{
+display: flex;
+justify-content: left;
+padding: 0.5rem;
 }
-.texto{
-    float: right;   
+/*animaciones al texto*/
+
+.title{
+    margin: 10px -5px -5px -5px;
+    padding: 1rem;
+    font-size: 50;
+    font: normal 40px Varela Round, sans-serif;
+    animation: move linear 18000ms infinite;
+
 }
-.vid{
-    width: 200px;
-    height: 200px;
-   border-color: aliceblue;
-   border-spacing: 10px;
-    border-radius: 15px;
-    padding: 10px;
-    border: 10px;
-    margin: 10px;
-    align-items: center;
+@keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 hsla(0, 100%, 50%, 1), 
+        3px 3px 0 hsla(0, 100%, 50%, 1), 
+        2px 2px 0 hsla(0, 100%, 50%, 1), 
+        1px 1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 hsla(0, 100%, 50%, 1), 
+        -3px 3px 0 hsla(0, 100%, 50%, 1), 
+        -2px 2px 0 hsla(0, 100%, 50%, 1), 
+        -1px 1px 0 hsla(0, 100%, 50%, 1),
+        4px -4px 0 hsla(180, 100%, 50%, 1), 
+        3px -3px 0 hsla(180, 100%, 50%, 1), 
+        2px -2px 0 hsla(180, 100%, 50%, 1), 
+        1px -1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 rgba(0, 255, 255, 0.478), 
+        3px 3px 0 hsla(180, 100%, 50%, 1), 
+        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 hsla(0, 100%, 50%, 1), 
+        -3px -3px 0 hsla(0, 100%, 50%, 1), 
+        -2px -2px 0 hsla(0, 100%, 50%, 1), 
+        -1px -1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+.box-text{
+    display: inline-block;
+    position: relative;
+    align-self: end;
+    top: -70px;
 }
-.adicionales{
-    padding: auto;
-    border: auto;
-    margin: auto;
-    background-size: 1000px 300px;
-    width: 1000px;
-    height: 300px;
+#texto{
+    width: 10rem;
+    height: 2rem;
+    background-color: azure;
+    border: 5px #1dd1a1;
+    border-radius: 5px;
 }
-.footer{
-    padding: auto;
-    border: auto;
-    margin: auto;
-    background-size: 1000px 300px;
-    width: 1000px;
-    height: 300px;
+#boton{height: 2rem;
+    background-color: azure;
+    border: 5px #1dd1a1;
+    border-radius: 5px;
+}
+.container-list{
+  align-self: center;
+  justify-content: space-between;
+  }
+ul li{
+    display: inline;
+    padding: 2rem;
+    font-size: 50;
+    font: normal 30px Varela Round, sans-serif;
+    animation: move linear 18000ms infinite;
+}
+a{  color: black;
+    text-decoration: none;
+}
+
+.jumbotron-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 500px;
+    background-image: url("../imagenes/background.jpg");
+}
+p{
+  font: normal 30px Varela Round, sans-serif;
+  text-align: center;
+  color: whitesmoke;
 }
