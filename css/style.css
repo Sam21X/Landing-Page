@@ -1,149 +1,259 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-body{
-    background-color: #2421e9a2;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.container-flex{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+body {
+  background-color: #2421e9a2;
 }
-.navigation-bar{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    border-style: groove;
-    border-radius: 20px;
-    margin: -5px -5px -5px -5px;
-    padding: 5px;
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-style: groove;
+  border-radius: 20px;
+  margin: -5px -5px -5px -5px;
+  padding: 5px;
 }
 
 
-.imagen{
-display: flex;
-justify-content: left;
-padding: 0.5rem;
+.imagen {
+  display: flex;
+  justify-content: left;
+  padding: 0.5rem;
 }
-/*animaciones al texto*/
 
-.title{
-    margin: 10px -5px -5px -5px;
-    padding: 1rem;
-    font-size: 50;
-    font: normal 40px Varela Round, sans-serif;
-    animation: move linear 18000ms infinite;
 
+.title {
+  /*animaciones al texto*/
+  margin: 10px -5px -5px -5px;
+  padding: 1rem;
+  font: normal 40px Varela Round, sans-serif;
+  color: wheat;
+  animation: move linear 21000ms infinite;
 }
+
+h2,
+h3 {
+  padding: 1rem;
+  font: normal 40px Varela Round, sans-serif;
+  color: wheat;
+  animation: move linear 22000ms infinite;
+}
+
 @keyframes move {
-    0% {
-      text-shadow:
-        4px -4px 0 hsla(0, 100%, 50%, 1), 
-        3px -3px 0 hsla(0, 100%, 50%, 1), 
-        2px -2px 0 hsla(0, 100%, 50%, 1), 
-        1px -1px 0 hsla(0, 100%, 50%, 1),
-        -4px 4px 0 hsla(180, 100%, 50%, 1), 
-        -3px 3px 0 hsla(180, 100%, 50%, 1), 
-        -2px 2px 0 hsla(180, 100%, 50%, 1), 
-        -1px 1px 0 hsla(180, 100%, 50%, 1)
-      ;
-    }
-    25% {    
-      text-shadow:      
-        -4px -4px 0 hsla(180, 100%, 50%, 1), 
-        -3px -3px 0 hsla(180, 100%, 50%, 1), 
-        -2px -2px 0 hsla(180, 100%, 50%, 1), 
-        -1px -1px 0 hsla(180, 100%, 50%, 1),
-        4px 4px 0 hsla(0, 100%, 50%, 1), 
-        3px 3px 0 hsla(0, 100%, 50%, 1), 
-        2px 2px 0 hsla(0, 100%, 50%, 1), 
-        1px 1px 0 hsla(0, 100%, 50%, 1)      
-      ;
-    }
-    50% {
-      text-shadow:
-        -4px 4px 0 hsla(0, 100%, 50%, 1), 
-        -3px 3px 0 hsla(0, 100%, 50%, 1), 
-        -2px 2px 0 hsla(0, 100%, 50%, 1), 
-        -1px 1px 0 hsla(0, 100%, 50%, 1),
-        4px -4px 0 hsla(180, 100%, 50%, 1), 
-        3px -3px 0 hsla(180, 100%, 50%, 1), 
-        2px -2px 0 hsla(180, 100%, 50%, 1), 
-        1px -1px 0 hsla(180, 100%, 50%, 1)
-      ;
-    }
-    75% {
-      text-shadow:
-        4px 4px 0 rgba(0, 255, 255, 0.478), 
-        3px 3px 0 hsla(180, 100%, 50%, 1), 
-        2px 2px 0 hsla(180, 100%, 50%, 1), 
-        1px 1px 0 hsla(180, 100%, 50%, 1),
-        -4px -4px 0 hsla(0, 100%, 50%, 1), 
-        -3px -3px 0 hsla(0, 100%, 50%, 1), 
-        -2px -2px 0 hsla(0, 100%, 50%, 1), 
-        -1px -1px 0 hsla(0, 100%, 50%, 1)      
-      ;
-    }
-    100% {
-      text-shadow:
-        4px -4px 0 hsla(0, 100%, 50%, 1), 
-        3px -3px 0 hsla(0, 100%, 50%, 1), 
-        2px -2px 0 hsla(0, 100%, 50%, 1), 
-        1px -1px 0 hsla(0, 100%, 50%, 1),
-        -4px 4px 0 hsla(180, 100%, 50%, 1), 
-        -3px 3px 0 hsla(180, 100%, 50%, 1), 
-        -2px 2px 0 hsla(180, 100%, 50%, 1), 
-        -1px 1px 0 hsla(180, 100%, 50%, 1)
-      ;
-    }  
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1),
+      2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1),
+      -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
   }
-.box-text{
-    display: inline-block;
-    position: relative;
-    align-self: end;
-    top: -70px;
+
+  25% {
+    text-shadow:
+      -4px -4px 0 hsla(180, 100%, 50%, 1),
+      -3px -3px 0 hsla(180, 100%, 50%, 1),
+      -2px -2px 0 hsla(180, 100%, 50%, 1),
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1),
+      3px 3px 0 hsla(0, 100%, 50%, 1),
+      2px 2px 0 hsla(0, 100%, 50%, 1),
+      1px 1px 0 hsla(0, 100%, 50%, 1);
+  }
+
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1),
+      -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1),
+      2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1);
+  }
+
+  75% {
+    text-shadow:
+      4px 4px 0 rgba(0, 255, 255, 0.478),
+      3px 3px 0 hsla(180, 100%, 50%, 1),
+      2px 2px 0 hsla(180, 100%, 50%, 1),
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1),
+      -3px -3px 0 hsla(0, 100%, 50%, 1),
+      -2px -2px 0 hsla(0, 100%, 50%, 1),
+      -1px -1px 0 hsla(0, 100%, 50%, 1);
+  }
+
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1),
+      2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1),
+      -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
 }
-#texto{
-    width: 10rem;
-    height: 2rem;
-    background-color: azure;
-    border: 5px #1dd1a1;
-    border-radius: 5px;
+
+.box-text {
+  display: inline-block;
+  position: relative;
+  align-self: end;
+  top: -70px;
 }
-#boton{height: 2rem;
-    background-color: azure;
-    border: 5px #1dd1a1;
-    border-radius: 5px;
+
+#texto {
+  width: 10rem;
+  height: 2rem;
+  background-color: azure;
+  border: 5px #1dd1a1;
+  border-radius: 5px;
 }
-.container-list{
+
+#boton {
+  height: 2rem;
+  background-color: azure;
+  border: 5px #1dd1a1;
+  border-radius: 5px;
+}
+
+.container-list {
   align-self: center;
   justify-content: space-between;
-  }
-ul li{
-    display: inline;
-    padding: 2rem;
-    font-size: 50;
-    font: normal 30px Varela Round, sans-serif;
-    animation: move linear 18000ms infinite;
-}
-a{  color: black;
-    text-decoration: none;
 }
 
-.jumbotron-flex{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: 500px;
-    background-image: url("../imagenes/background.jpg");
+ul,
+li {
+  display: inline;
+  padding: 2rem;
+  font-size: 50;
+  font: normal 30px Varela Round, sans-serif;
+  animation: move linear 18000ms infinite;
 }
-p{
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.jumbotron-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 600px;
+  background-image: url("../imagenes/background.jpg");
+  background-size: cover;
+}
+
+.jumbo-text {
   font: normal 30px Varela Round, sans-serif;
   text-align: center;
   color: whitesmoke;
+  padding: 0px 0px 50px 0px;
+}
+
+p {
+  font: normal 30px Varela Round, sans-serif;
+  text-align: center;
+  color: whitesmoke;
+
+}
+
+h4 {
+  font: normal 30px Varela Round, sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.texto-intro,
+.blog-titulo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font: normal 30px Varela Round, sans-serif;
+  animation: move linear 18000ms infinite;
+}
+
+.image-intro {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 40%;
+  margin: auto;
+}
+
+.blog-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 600px;
+  background-image: url("../imagenes/fondo_blog.jpeg");
+  background-size: cover;
+}
+
+#cajas-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 11rem;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.a,
+.b,
+.c {
+  border-style: groove;
+  border-color: tomato;
+  border-radius: 20px;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+
+}
+
+.image-sifu,
+.image-stray,
+.image-witcher,
+.main {
+  border-radius: 20px;
+
+}
+
+.desc_sifu,
+.desc_stray,
+.desc_witcher {
+  word-wrap: break-word;
+  overflow: auto;
+  overflow: hidden;
 }
